@@ -1,0 +1,48 @@
+redirectsOrigin = "config"
+plugins = []
+headers = []
+
+[dev]
+command = "npm start"
+publish = "build"
+targetPort = 3000.0
+port = 8888.0
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "C:\\Users\\91941\\Documents\\project3Netflix\\project-bolt-github-9l7dkroz\\project\\NewEditedBolt\\Netflix-Clone\\project\\build"
+publishOrigin = "config"
+commandOrigin = "config"
+base = "C:\\Users\\91941\\Documents\\project3Netflix\\project-bolt-github-9l7dkroz\\project\\NewEditedBolt\\Netflix-Clone\\project"
+command = "npm run build"
+
+[build.environment]
+NODE_VERSION = "18"
+NPM_VERSION = "9"
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
