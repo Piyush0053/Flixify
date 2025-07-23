@@ -25,8 +25,7 @@ const SignUpPage: React.FC = () => {
         </div>
       </div>
       
-      <Navbar 
-      />
+      <Navbar />
       
       <SignUpForm />
     </div>

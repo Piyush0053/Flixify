@@ -6,15 +6,15 @@ import Row from '../../components/Row/Row';
 const NewPopularPage: React.FC = () => {
   // New & Popular specific API endpoints
   const newPopularRequests = {
-    fetchTrendingAll: `/trending/all/day?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&language=en-US`,
-    fetchTrendingWeek: `/trending/all/week?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&language=en-US`,
-    fetchUpcomingMovies: `/movie/upcoming?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&language=en-US`,
-    fetchPopularMovies: `/movie/popular?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&language=en-US`,
-    fetchPopularTV: `/tv/popular?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&language=en-US`,
-    fetchAiringToday: `/tv/airing_today?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&language=en-US`,
-    fetchOnTheAir: `/tv/on_the_air?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&language=en-US`,
-    fetchNetflixOriginals: `/discover/tv?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&with_networks=213`,
-    fetchNewReleases: `/discover/movie?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&sort_by=release_date.desc&primary_release_date.gte=${new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]}`,
+    fetchTrendingAll: `/trending/all/day?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US`,
+    fetchTrendingWeek: `/trending/all/week?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US`,
+    fetchUpcomingMovies: `/movie/upcoming?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US`,
+    fetchPopularMovies: `/movie/popular?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US`,
+    fetchPopularTV: `/tv/popular?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US`,
+    fetchAiringToday: `/tv/airing_today?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US`,
+    fetchOnTheAir: `/tv/on_the_air?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US`,
+    fetchNetflixOriginals: `/discover/tv?api_key=${import.meta.env.VITE_TMDB_API_KEY}&with_networks=213`,
+    fetchNewReleases: `/discover/movie?api_key=${import.meta.env.VITE_TMDB_API_KEY}&sort_by=release_date.desc&primary_release_date.gte=${new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]}`,
   };
 
   return (

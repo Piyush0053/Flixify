@@ -27,14 +27,14 @@ const TVShowsPage: React.FC = () => {
 
   // TV Show specific API endpoints
   const tvRequests = {
-    fetchTrendingTV: `/trending/tv/week?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&language=en-US`,
-    fetchTopRatedTV: `/tv/top_rated?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&language=en-US`,
-    fetchPopularTV: `/tv/popular?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&language=en-US`,
-    fetchNetflixOriginals: `/discover/tv?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&with_networks=213`,
-    fetchActionTV: `/discover/tv?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&with_genres=10759`,
-    fetchComedyTV: `/discover/tv?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&with_genres=35`,
-    fetchCrimeTV: `/discover/tv?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&with_genres=80`,
-    fetchDocumentaryTV: `/discover/tv?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&with_genres=99`,
+    fetchTrendingTV: `/trending/tv/week?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US`,
+    fetchTopRatedTV: `/tv/top_rated?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US`,
+    fetchPopularTV: `/tv/popular?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US`,
+    fetchNetflixOriginals: `/discover/tv?api_key=${import.meta.env.VITE_TMDB_API_KEY}&with_networks=213`,
+    fetchActionTV: `/discover/tv?api_key=${import.meta.env.VITE_TMDB_API_KEY}&with_genres=10759`,
+    fetchComedyTV: `/discover/tv?api_key=${import.meta.env.VITE_TMDB_API_KEY}&with_genres=35`,
+    fetchCrimeTV: `/discover/tv?api_key=${import.meta.env.VITE_TMDB_API_KEY}&with_genres=80`,
+    fetchDocumentaryTV: `/discover/tv?api_key=${import.meta.env.VITE_TMDB_API_KEY}&with_genres=99`,
   };
 
   return (

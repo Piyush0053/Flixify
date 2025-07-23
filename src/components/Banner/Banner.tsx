@@ -64,7 +64,7 @@ const Banner: React.FC = () => {
       const movieTitle = movie?.title || movie?.name || movie?.original_name;
       // Make the API request to search for videos
       const response = await axios.get(
-        `/search/movie?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0&query=${encodeURIComponent(movieTitle)}`
+        `/search/movie?api_key=ad6e4cfa2ecf14394c8a-74ad0a505f60&query=${encodeURIComponent(movieTitle)}`
       );
       
       // Get the movie ID from the search results
@@ -73,7 +73,7 @@ const Banner: React.FC = () => {
       if (movieId) {
         // Get videos for this movie
         const videoResponse = await axios.get(
-          `/movie/${movieId}/videos?api_key=d5bd6f3bb580845fab6e6dee25c3f0a0`
+          `/movie/${movieId}/videos?api_key=ad6e4cfa2ecf14394c8a-74ad0a505f60`
         );
         
         // Get official trailers first, fallback to any video
