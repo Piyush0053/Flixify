@@ -26,9 +26,6 @@ const SignUpPage: React.FC = () => {
       </div>
       
       <Navbar 
-        darkMode={darkMode} 
-        toggleDarkMode={toggleDarkMode} 
-        navigate={navigate}
       />
       
       <SignUpForm />
